@@ -83,15 +83,17 @@ img {
   cursor: pointer;
   margin-bottom: 1rem;
   outline: inherit;
-  transition: 0.5s ease-in;
+  transition: 0.5s all;
 }
 #btn span {
   color: var(--secondary-color);
-  transition: 0.5s ease-in;
+  transition: 0.5s all;
 }
-#btn:hover,
-#btn:hover span {
+#btn:hover {
   background: rgba(0, 0, 0, 0.5);
+  color: #14f31f;
+}
+#btn:hover span {
   color: #14f31f;
 }
 
@@ -103,11 +105,11 @@ img {
 }
 
 #log p {
-  /* background: #fff; */
   color: #fff;
   margin-top: 1rem;
   font-weight: 800;
   font-size: 1.4rem;
+  height: 2rem;
 }
 
 /* Footer */

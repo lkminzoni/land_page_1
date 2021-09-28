@@ -1,10 +1,14 @@
-console.log("Hello World")
-
-
-// let captured;
+const nextBtn = document.querySelector('#btn');
+nextBtn.addEventListener('click', getValue);
 
 function getValue(){
-    captured = document.getElementById("inp").value;
-    document.getElementById("parag").innerText = `Hello ${captured}`;
+    let captured = document.querySelector("#inp");
+    let passwordInp = document.querySelector('#password');
+    const paragraph = document.querySelector("#parag");paragraph.innerText = `Hello ${captured.value.toUpperCase()}`;
+    captured.value = '';
+    passwordInp.value = '';
+    setTimeout(() => {
+        paragraph.innerText = '';
+    }, 2000);
 }
 
