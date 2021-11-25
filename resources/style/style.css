@@ -3,6 +3,7 @@
   --primary-color: #000;
   --secondary-color: #003800;
   --dark-color: #616060;
+  --danger-color: #ff0000;
 }
 * {
   margin: 0;
@@ -11,6 +12,11 @@
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
 }
+/* Handlers */
+.hidden {
+  display: none;
+}
+/* end */
 
 body {
   overflow-x: hidden;
@@ -72,7 +78,7 @@ img {
   outline: none;
   color: #fff;
 }
-
+/* Button submit */
 #btn {
   background: rgba(255, 255, 255, 0.9);
   border: none;
@@ -96,12 +102,55 @@ img {
 #btn:hover span {
   color: #14f31f;
 }
-
+/* end */
+/* Button Cancel */
+#btn-cancel {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: var(--danger-color);
+  min-height: 2.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  outline: inherit;
+  transition: 0.5s all;
+}
+#btn-cancel span {
+  color: var(--danger-color);
+  transition: 0.5s all;
+}
+#btn-cancel:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--danger-color);
+}
+#btn-cancel:hover span {
+  color: var(--danger-color);
+}
+/* End */
 .account {
   color: #fff;
   text-align: right;
   font-size: 0.7rem;
   margin-bottom: 0.6rem;
+}
+.lower-right-log-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-img {
+  height: 35px;
+  margin-left: 1rem;
+}
+
+.face-img:hover {
+  cursor: pointer;
+}
+
+.logon {
+  display: flex;
+  flex-direction: column;
 }
 
 #log p {
@@ -110,6 +159,16 @@ img {
   font-weight: 800;
   font-size: 1.4rem;
   height: 2rem;
+}
+
+.errorMsg {
+  color: var(--danger-color) !important;
+  font-size: 0.8rem !important;
+  margin-top: -20px !important;
+  margin-bottom: -12px !important;
+  padding: 0 !important;
+  width: 16rem !important;
+  text-align: right !important;
 }
 
 /* Footer */

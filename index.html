@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="icon" href="./resources/img/favicon.ico" type="image/x-icon">
+    <script src="./resources/js/login.js" defer></script>
+    <script src="./resources/js/logon.js" defer></script>
 </head>
 
 <body>
@@ -23,10 +25,21 @@
         </div>
         <div id="log">
             <input id="inp" type="text" name="inp" placeholder="Enter your Username">
+            <input class="hidden" id="fName" type="text" name="fName" placeholder="Enter your First Name">
+            <input class="hidden" id="lName" type="text" name="fName" placeholder="Enter your Last Name">
+            <input class="hidden" id="email" type="email" name="email" placeholder="Enter your email">
             <input id="password" type="password" name="password" placeholder="Enter your password">
+            <input class="hidden" id="rePassword" type="password" name="rePassword" placeholder="Confirm your password">
             <button id="btn" type="button">Next <span class="fas fa-chevron-right"></span></button>
-            <a class="account" href="#">Forgot Password?</a>
-            <a class="account" href="#">Don't have an account?</a>
+            <button class="hidden" id="btn-cancel" type="button">Cancel <span class="fas fa-times"></span></button>
+            <div class="lower-right-log-container">
+                <img class="face-img" src="./resources/img/facialRec_white.png" alt="facial recognition image">
+                <div class="logon">
+                    <a id="oldAccount" class="account" href="#">Forgot Password?</a>
+                    <a id="newAccount" class="account" href="#">Don't have an account?</a>
+                </div>
+
+            </div>
             <p id="parag"></p>
         </div>
     </section>
@@ -45,8 +58,6 @@
             <a href="https://www.discord.com" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </footer>
-
-    <script src="./resources/js/app.js"></script>
 </body>
 
 </html>
