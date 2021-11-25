@@ -215,12 +215,20 @@ img {
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
+    min-height: 100vh;
   }
   #name {
     margin-top: 3rem;
   }
   #log {
+    margin-top: 3rem;
+    padding-bottom: 0;
     min-height: 20rem;
+    overflow-y: auto;
+  }
+
+  #fName {
+    margin-top: 3rem;
   }
   #container_left {
     display: none;
