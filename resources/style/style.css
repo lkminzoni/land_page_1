@@ -259,25 +259,3 @@ img {
     text-align: right !important;
   }
 }
-
-/* @media (max-height: 320px) {
-  .container {
-    padding-top: 10rem;
-    flex-direction: row;
-  }
-  #name img {
-    width: 8rem;
-  }
-  #title {
-    margin: 0.1rem 0 0.3rem 0;
-    font-size: 1rem;
-  }
-  #text {
-    font-size: 0.8rem;
-    margin: 0.1rem 2.5rem;
-  }
-  /* Right Side */
-/* #log {
-    min-height: 16rem;
-  }
-} */
