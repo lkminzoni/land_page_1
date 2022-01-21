@@ -20,19 +20,22 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 .container::before {
   content: "";
   background: url(../img/header_main.jpg) no-repeat center center/cover;
   filter: blur(4px);
-  height: 105%;
-  width: 102%;
+  top: -1;
+  left: -1;
+  min-height: 105%;
+  min-width: 102%;
   position: absolute;
   z-index: -1;
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -214,10 +217,9 @@ img {
   .container {
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 2rem;
   }
-  #name {
-    margin-top: 3rem;
-  }
+
   #log {
     margin-top: 3rem;
     padding-bottom: 0;
@@ -226,9 +228,6 @@ img {
     overflow-x: hidden;
   }
 
-  #fName {
-    margin-top: 3rem;
-  }
   #container_left {
     display: none;
   }
@@ -261,8 +260,9 @@ img {
   }
 }
 
-@media (max-height: 320px) {
+/* @media (max-height: 320px) {
   .container {
+    padding-top: 10rem;
     flex-direction: row;
   }
   #name img {
@@ -277,7 +277,7 @@ img {
     margin: 0.1rem 2.5rem;
   }
   /* Right Side */
-  #log {
+/* #log {
     min-height: 16rem;
   }
-}
+} */
